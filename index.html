@@ -19,10 +19,11 @@
 
     <main class="main-page">
       <section class="welcome-sign">
-        <h1>welcome to the gorgeous sedona</h1>
-        <p>because the grand canyon sucks</p>
+        <h1 class="visually-hidden">welcome to the gorgeous sedona</h1>
+        <p class="visually-hidden">because the grand canyon sucks</p>
       </section>
       <section class="about">
+        <h2 class="visually-hidden">О городе Седона</h2>
         <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p>  
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
@@ -72,18 +73,34 @@
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li> 
       </ul>
+      <p class="info">Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <section class="booking">
-        <p>Заинтересовались?</p>
-        <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <h3>Поиск гостиницы в Седоне</h3>   
-        <p>Дата заезда</p>
-        <p>Дата выезда</p>
-        <p>Взрослые</p>
-        <p>Дети</p>
-        <p>Найти</p>    
-        <!-- Здесь будет форма -->   
+        <h2>Поиск гостиницы в Седоне</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="booking-item">
+            <label for="arrive-date">Дата заезда</label>
+            <input id="arrive-date" type="text" name="arrivedate" value="" placeholder="24-апреля-2017">
+          </p>
+          <p class="booking-item">
+            <label for="leave-date">Дата выезда</label>
+            <input id="leave-date" type="text" name="leavedate" value="" placeholder="4-июля-2017">
+          </p>
+          <p class="booking-item">
+            <label for="adult">Взрослые</label>
+            <button class="button count-button count-button-minus" type="button">-</button>
+            <input id="type-adult" type="text" name="adult" value="" placeholder="">
+            <button class="button count-button count-button-plus" type="button">+</button>
+          </p>
+          <p class="booking-item">
+            <label for="child">Дети</label>
+            <button class="button count-button count-button-minus" type="button">-</button>
+            <input id="type-child" type="text" name="child" value="" placeholder="">
+            <button class="button count-button count-button-plus" type="button">+</button>
+          </p>
+          <button class="button" type="submit">Найти</button> 
+        </form>
         <!--Подключаем карту --> 
-          <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+          <img src="img/map.jpg" width="1718" height="748" alt="Адрес:США, штат Аризона, город Седона">
       </section>
     </main>
     <footer class="main-footer">
