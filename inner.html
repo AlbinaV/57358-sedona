@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -60,13 +63,13 @@
             </ul>
           </fieldset>
           <fieldset>
-            <label for="price">Стоимость в сутки(p):</label>
+            <legend><label for="price">Стоимость в сутки(p):</label></legend>
             <p>от 0</p>
             <input type="range" id="price" name="price" min="1" max="3000" step="1">
             <p>до 3000</p>
           </fieldset>
           <button class="filter-button button" type="submit">Показать</button> 
-          <fieldset>
+          <fieldset class="typefilter">
             <p>Найдено:3</p> 
             <p>Сортировка:</p>
             <button class="sort-button button" type="submit">по цене</button> 
