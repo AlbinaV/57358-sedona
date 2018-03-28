@@ -355,9 +355,6 @@ a {
     
 }
 
-
-
-
 .sort-button{
     list-style: none;
 }
@@ -366,13 +363,13 @@ a {
   color:#dbdbdb;
   background-color:transparent;  
   text-decoration: none; /* Убираем подчеркивание */
-  border-bottom: 1px dashed ##c4dcea; /* Добавляем линию */
+  border-bottom: 1px dashed #c4dcea; /* Добавляем линию */
 }
 
 .sort-button:hover{
   color:#c4dcea; 
   text-decoration: none; /* Убираем подчеркивание */
-  border-bottom: 1px dashed ##c4dcea; /* Добавляем линию */
+  border-bottom: 1px dashed #c4dcea; /* Добавляем линию */
 }
 
 .sort-button:focus{
