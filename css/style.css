@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,7 +27,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
+
 
 .button {
   font: inherit;
@@ -52,21 +52,16 @@ a {
 .welcome-sign{
   color:#000000;
   background-color: #81b3d2;
-  background-image:url("../img/background.jpg");
+  background-image:url("../img/welcome.png"),url("../img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat; 
 }
     
-
-
 .sedona{
   font-size: 21px;
   font-weight:bold;
   line-height: 26px; 
 }
-
-
-
 
 .button:hover,
 .button:focus,
@@ -133,12 +128,9 @@ a {
   line-height: 21px;
 }
 
-
-
 .features .feature-item {
   text-align: center;
 }
-
 
 .more-features {
   list-style: none;
@@ -210,16 +202,16 @@ a {
 }
 
 
-.booking .find-button {
+.find-button {
    background-color: #81b3d2;
    color:#ffffff;  
 }
 
-.booking .find-button:hover {
+.find-button:hover {
   background-color:#669ec0; 
 }
 
-.booking .find-button:focus {
+.find-button:focus {
   background-color: #5496bd; 
 }
 
@@ -255,11 +247,11 @@ a {
   color:#000000;
 }
 
-.footer-copyright .academy:hover{
+.academy:hover{
   color:#81b3d2;
 }
 
-.footer-copyright .academy:focus {
+.academy:focus {
   color: #bdbbbc;
 }
 
@@ -291,7 +283,7 @@ a {
   background-repeat: repeat;
 }
 
-.filter ul {
+.filter-list {
   list-style: none;
   line-height: 21px;
 }
@@ -306,7 +298,7 @@ a {
   opacity: 0.5;
 }
 
-.filter legend {
+.filter-legend {
   font-size: 16px;
   line-height: 21px;
   font-weight:bold;
@@ -351,8 +343,7 @@ a {
 
 .typefilter{
   color:#000000;
-  background-color:#ffffff;   
-    
+  background-color:#ffffff;       
 }
 
 .sort-button{
@@ -436,5 +427,186 @@ a {
 }
 
 
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
 
 
+.main-header {
+  list-style: none;
+  width: 1200px;
+  position:relative;
+  margin:0 40px;
+   
+}
+
+.main-page{
+  list-style: none;
+  width: 1200px;
+  margin: 0 40px;
+}
+
+.main-navigation {
+ display: flex;
+ flex-direction: column;
+ padding-top: 15px;
+ 
+ /* Временно для сетки */
+ min-height: 55px;
+}
+
+.main-header-logo {
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+  width: 138px;
+  height: 70px;
+}
+
+.site-navigation {
+  width: 1055px;
+  margin: 0 auto;
+  list-style: none;
+    
+  display: flex;
+  justify-content: space-between;    
+       
+  min-height: 55px;
+}
+
+.welcome-sign{
+    width: 1200px;   
+    min-height: 508px;
+}
+
+.about{
+   min-height: 180px;  
+}
+
+.feature-item{
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+    
+  min-height: 250px;
+}
+
+.cityinfo{
+   width: 400px;  
+    /* Временно для сетки */
+  min-height: 255px;
+ 
+}
+
+.gallery{
+    width: 800px;
+
+  /* Временно для сетки */
+  min-height: 255px;
+}
+
+.features{
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 330px;
+}
+
+.features-list{
+     width: 400px;
+
+  
+}
+
+.more-features{
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  
+  /* Временно для сетки */
+  min-height: 255px;
+     
+}
+
+
+.more-features-list{
+   width: 400px; 
+    
+}
+
+.data-block{
+   /* Временно для сетки */
+  min-height: 290px;   
+}
+
+.booking{
+  width: 1200px; 
+}
+
+.map{
+  display:flex;
+  width: 1200px; 
+/* Временно для сетки */
+  min-height: 475px;   
+}
+
+.booking-form{
+   width: 270px;
+}
+
+
+.main-footer {
+  list-style: none;
+  padding: 40px 0;
+   /* Временно для сетки */
+   min-height: 120px;
+    
+}
+
+.footer-hashtag {
+  width: 140px;
+  margin: 0;
+  padding-top: 50px;
+  margin-right: 255px;
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+.footer-social {
+  width: 150px;
+  padding-top: 35px;
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+.footer-copyright {
+  width: 200px;
+  margin: 0;
+  margin-left: 230px;
+  padding-top: 40px;
+  /* Временно для сетки */
+  min-height: 120px;
+}
+
+.container{
+  width: 1055px;
+  margin: 0 40px; 
+  padding: 0 75px;
+}
+
+
+.main-footer .container {
+  display: flex;
+}
