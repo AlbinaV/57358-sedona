@@ -28,7 +28,8 @@
       <section class="filter">
         <h2 class="visually-hidden">сортировка гостиниц</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <div class="catalog-columns">
+          <fieldset class="first-fielset">
             <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-option">
@@ -45,7 +46,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="second-fieldset">
             <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-option">
@@ -62,24 +63,33 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="third-fieldset">
             <legend class="filter-legend"><label for="price">Стоимость в сутки(p):</label></legend>
             <p>от 0</p>
             <input type="range" id="price" name="price" min="1" max="3000" step="1">
             <p>до 3000</p>
+           <button class="filter-button button" type="submit">Показать</button> 
           </fieldset>
-          <button class="filter-button button" type="submit">Показать</button> 
-          <fieldset class="typefilter">
-            <p class="found">Найдено:3</p> 
-            <p class="sort" >Сортировка:</p>
-            <a class="sort-button">по цене</a> 
-            <a class="sort-button">по типу</a> 
-            <a class="sort-button">по рейтингу</a> 
-            <a class="view-button">по возрастанию</a> 
-            <a class="view-button">по убыванию</a>
-          </fieldset>
+          </div>
         </form>
-      </section>
+     </section>
+          <div class="typefilter">
+            <div class="container-typefilter">
+              <div class="typefilter-found"> 
+                <p class="found">Найдено:3</p>
+              </div>
+              <div class="typefilter-sort"> 
+                <p class="sort">Сортировка:</p>
+                <a class="sort-button">по цене</a> 
+                <a class="sort-button">по типу</a> 
+                <a class="sort-button">по рейтингу</a> 
+              </div>
+              <div class="typefilter-view"> 
+                <a class="view-button">по возрастанию</a> 
+                <a class="view-button">по убыванию</a>
+              </div>
+            </div>
+          </div >
       <section class="catalog">
         <h2 class="visually-hidden">список гостиниц</h2>
         <ul class="catalog-list">
@@ -141,19 +151,21 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtag">
-        #visitsedona 
-      </p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <p>Website by</p> 
-        <a class="button academy" href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="container">
+        <p class="footer-hashtag">
+          #visitsedona 
+        </p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Twitter</a></li>
+            <li><a class="social-button" href="#">Facebook</a></li>
+            <li><a class="social-button" href="#">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <p>Website by</p> 
+          <a class="button academy" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </footer> 
   </body>
