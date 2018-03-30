@@ -181,16 +181,17 @@ a {
   background-color: #ebebeb;
 }
 
-.booking h2{
+.find-hotel{
    color:#ffffff;
-   background-color:#766357; 
+   background-color:#766357;
+   width:570px;
 }
 
-.booking h2:hover {
+.find-hotel:hover {
     background-color:#604e43;
 }
 
-.booking h2:focus {
+.find-hotel:focus {
     background-color: #503e33;
     color:#857871;
 }
@@ -595,9 +596,39 @@ body {
     flex-direction:column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
     background-color: aquamarine;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
 }
+
+
+.map{
+  display:flex;
+  width: 1200px; 
+  
+/* Временно для сетки */
+  min-height: 475px;   
+}
+
+.booking{
+ 
+  width: 570px;
+  height: 395px; 
+  background-color: #ffffff;
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/*
+.map{
+  display:flex;
+  width: 1200px; 
+ Временно для сетки 
+  min-height: 475px;   
+}
+
 
 .booking{
  
@@ -608,14 +639,8 @@ body {
   left:50%;
   transform:translateX(-50%);
 }
+*/
 
-
-.map{
-  display:flex;
-  width: 1200px; 
-/* Временно для сетки */
-  min-height: 475px;   
-}
 
 
 
