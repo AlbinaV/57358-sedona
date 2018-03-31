@@ -185,6 +185,7 @@ a {
    color:#ffffff;
    background-color:#766357;
    width:570px;
+    margin-top:50px;
 }
 
 .find-hotel:hover {
@@ -469,7 +470,7 @@ body {
  
  /* Временно для сетки */
  min-height: 55px;
- background-color:aqua;
+
 }
 
 .main-header-logo {
@@ -488,7 +489,7 @@ body {
   display: flex;
   justify-content: space-between;
   
-  background-color:antiquewhite;
+  
   min-height: 55px;
 }
 
@@ -516,8 +517,6 @@ body {
     text-align: right;
    
 }
-
-
 
 .welcome-sign{
     width: 1200px;   
@@ -570,7 +569,6 @@ body {
 
 .features-list{
      width: 400px;
-
 }
 
 .more-features{
@@ -588,62 +586,35 @@ body {
    width: 400px;    
 }
 
-
-
-.main-form-wrapper{
-    width:570px;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aquamarine;
-    position: relative;
-    left:50%;
-    transform:translateX(-50%);
+.data-block{
+    margin: 0 auto;
+    width: 568px;
+    text-align: center;
+    
 }
 
+.booking{
+  position: absolute;
+  width: 568px;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+    
+ 
+  min-height: 395px;
+  background-color: #ffffff;
+}
 
 .map{
-  display:flex;
-  width: 1200px; 
-  
+ position: relative;
 /* Временно для сетки */
-  min-height: 475px;   
+  min-height: 475px; 
+  
 }
 
-.booking{
- 
-  width: 570px;
-  height: 395px; 
-  background-color: #ffffff;
-  position: absolute;
-  left:50%;
-  transform:translateX(-50%);
+.image img{
+   max-width: 100%;
 }
-
-/*
-.map{
-  display:flex;
-  width: 1200px; 
- Временно для сетки 
-  min-height: 475px;   
-}
-
-
-.booking{
- 
-  width: 570px;
-  height: 480px;  
-  background-color: #ffffff;
-  position: absolute;
-  left:50%;
-  transform:translateX(-50%);
-}
-*/
-
-
-
-
 
 .main-footer {
   list-style: none;
@@ -651,8 +622,7 @@ body {
   width: 1200px;
   margin:0 40px;
   
-  min-height: 120px;
-    
+  min-height: 120px;  
 }
 
 
@@ -684,14 +654,11 @@ body {
 .footer-copyright {
   width: 240px;
   margin: 0;
- /* margin-left: 90px; */
   padding-top: 40px;
   /* Временно для сетки */
  
   background-color: aquamarine;
 }
-
-
 
 .main-footer .container {
   display: flex;
@@ -707,8 +674,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
- 
-    
   min-height: 220px;
     
 }
@@ -717,7 +682,15 @@ body {
   margin: 0;  
   display: flex;
   margin:0 70px;
-   width: 1060px;
+   
+
+}
+
+
+.filter-form{
+  margin: 0;  
+  display: flex;
+  margin:0 70px;
 }
 
 .first-fielset{
