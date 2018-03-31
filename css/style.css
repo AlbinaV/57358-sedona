@@ -670,20 +670,9 @@ body {
 /* ----- вторая страница ----- */
 
 .filter{
-  
   margin: 0;
   padding: 0;
-  list-style: none;
-  min-height: 220px;
-    
-}
-
-.catalog-columns {
-  margin: 0;  
-  display: flex;
-  margin:0 70px;
-   
-
+  list-style: none;  
 }
 
 
@@ -691,6 +680,8 @@ body {
   margin: 0;  
   display: flex;
   margin:0 70px;
+    
+  min-height: 220px;
 }
 
 .first-fielset{
