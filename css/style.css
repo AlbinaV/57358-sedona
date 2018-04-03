@@ -272,7 +272,27 @@ a {
 
 
 .filter fieldset {
+  border: none;  
+  padding: 0;
+  margin: 0; 
+}
+
+.filter-legend{
   border: none;
+    
+  padding: 0;
+  margin: 0;
+    
+  font-size: 16px;
+  line-height: 21px;
+  font-weight:bold;
+}
+
+.filter ul{
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;   
 }
 
 .filter {
@@ -300,12 +320,21 @@ a {
   opacity: 0.5;
 }
 
-.filter-legend {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight:bold;
+
+.filter-option {
+
+  margin-top: 25px;
+  padding-left:44px;
 }
 
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
 
 .filter-button{
   background-color: transparent;
@@ -324,7 +353,6 @@ a {
 .catalog-list {
   list-style: none;
 }
-
 
 .catalog-item a {
   color: #000000;
@@ -685,19 +713,44 @@ body {
 }
 
 .first-fielset{
-   width: 240px; 
+   width: 260px; 
    margin: 0;
-    
+
 }
 
 .second-fieldset{
-   width: 290px; 
+   width: 495px; 
    margin-right: 200px;
 }
 
 .third-fieldset{
    margin: 0;
    width: 330px; 
+
+}
+
+.filter fieldset {
+  border: none;
+    
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0px;
+  
+  border: none;
+}
+
+.filter-legend{
+  border: none;
+  padding-top: 28px;    
+  padding-left: 3px;
+  margin: 0; 
+}
+
+.filter ul{
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;   
 }
 
 
@@ -707,41 +760,95 @@ body {
    width: 1060px;
   /* Временно для сетки */
   background-color:#ffffff;
-  min-height: 87px;
+ 
     
  
+    
 }
 
-
 .container-typefilter{
-  margin: 0;
-  
+   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+ 
+
+   background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+    
+}
+
+.typefilter-found{
+    text-align: left;
+   
+    padding-top:0px;
     
 
-  
+}
+
+.sort{
+    text-align: left;
+    margin-left:50px;
+    background-color: green;
+}
+
+.sort-button{
+    text-align: left;
+    padding-top:0px;
+    margin-left:40px;
 }
 
 .typefilter-found{
   margin: 0;
   padding: 0;
-  width:140px; 
+  width: 140px; 
+  
   
 }
 
 .typefilter-sort{
   width:396px;
   margin: 0;
-  margin-left:30px;
-    
+  margin-left:30px; 
 }
-
 
 .typefilter-view{
     width:240px;
     margin-left: 280px;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -2px;
+
+  width: 23px;
+  height: 23px;
+
+ 
     
+  background-image: url("..//img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+    
+    
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: -42px;
+  top: -2px;
+
+  width: 26px;
+  height: 26px;
+  
+
+  background-image: url("..//img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog-list {
@@ -750,7 +857,6 @@ body {
   
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 
