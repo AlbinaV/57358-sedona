@@ -14,10 +14,10 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="info.html">информация</a></li>
-          <li><a href="photo.html">фото и видео</a></li>
-          <li><a href="map.html">карта штата</a></li>
-          <li><a href="hotels.html">гостиницы</a></li>
+          <li class="navigation-item"><a href="info.html">информация</a></li>
+          <li class="navigation-item"><a href="photo.html">фото и видео</a></li>
+          <li class="navigation-item"><a href="map.html">карта штата</a></li>
+          <li  class="navigation-item"><a href="hotels.html">гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -64,29 +64,36 @@
             </ul>
           </fieldset>
           <fieldset class="third-fieldset">
-            <legend class="filter-legend"><label for="price">Стоимость в сутки(p):</label></legend>
+            <legend class="filter-legend"><label for="price">Стоимость в сутки (p):</label></legend>
             <p>от 0</p>
             <input type="range" id="price" name="price" min="1" max="3000" step="1">
             <p>до 3000</p>
            <button class="filter-button button" type="submit">Показать</button> 
           </fieldset>
-        
         </form>
      </section>
           <div class="typefilter">
             <div class="container-typefilter">
               <div class="typefilter-found"> 
-                <p class="found">Найдено:3</p>
+                <p class="found">Найдено: 3</p>
               </div>
               <div class="typefilter-sort"> 
-                <p class="sort">Сортировка:</p>
-                <a class="sort-button">по цене</a> 
-                <a class="sort-button">по типу</a> 
-                <a class="sort-button">по рейтингу</a> 
+                <span class="sort">Сортировка:</span>
+                <span class="sort-button">по цене</span> 
+                <span class="sort-button">по типу</span> 
+                <span class="sort-button">по рейтингу</span> 
               </div>
               <div class="typefilter-view"> 
-                <a class="view-button">по возрастанию</a> 
-                <a class="view-button">по убыванию</a>
+                <a class="view-button" href="#">
+                  <span class="visually-hidden">по возрастанию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"><polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                  </svg>
+                </a>
+                <a class="view-button" href="#">
+                  <span class="visually-hidden">по убыванию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"><polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
@@ -94,58 +101,74 @@
         <h2 class="visually-hidden">список гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a href="catalog-item.html"><h3 class="hotel-title">Amara resort & spa</h3></a>
-            <span class="hotel-type">Гостиница</span>
-            <p class="catalog-item-image">
+            <section class="hotel-photo"> 
+              <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/hotel1.jpg" width="135" height="90" alt="отель">
               </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>от 4000 р.</b>
+              </p>
+            </section>
+            <section class="hotel-info">
+              <a href="catalog-item.html"><h3 class="hotel-title">Amara resort & spa</h3></a>
+              <span class="hotel-type">Гостиница</span>
+              <span class="catalog-item-price">от 4000 р.</span>       
               <a class="button-booking" href="#">Забронировать</a>
               <a  class="button-info" href="#">Подробнее</a>
-            </p>
-            <p class="rating">Рейтинг 8,5</p>
-            <a class="stars">
-              <img src="img/star.svg" width="18" height="17" alt="отель четыре звезды">
-            </a>
+            </section>
+            <section class="hotel-rating">
+              <a class="stars">
+                <img src="img/star.svg" width="18" height="17" alt="отель четыре звезды">
+              </a>
+              <p class="rating">Рейтинг 8,5</p> 
+            </section> 
           </li>
           <li class="catalog-item">
-            <a href="catalog-item.html"><h3 class="hotel-title">Desert Quail Inn</h3></a>
-            <span class="hotel-type">Мотель</span>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/hotel3.jpg" width="135" height="90" alt="отель">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>от 3000 р.</b>
+            <section class="hotel-photo"> 
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/hotel3.jpg" width="135" height="90" alt="отель">
+                </a>
+              </p>
+            </section>
+            <section class="hotel-info">
+              <a href="catalog-item.html"><h3 class="hotel-title">Desert Quail Inn</h3></a>
+              <span class="hotel-type">Мотель</span>
+              <p class="catalog-item-price">
+                <b>от 3000 р.</b>
+              </p>
               <a class="button-booking" href="#">Забронировать</a>
               <a  class="button-info" href="#">Подробнее</a>
-            </p>
-            <p class="rating">Рейтинг 8,9</p>
-            <a class="stars">
-              <img src="img/star.svg" width="18" height="17" alt="отель три звезды">
-            </a>
+            </section>
+            <section class="hotel-rating">
+              <a class="stars">
+                <img src="img/star.svg" width="18" height="17" alt="отель три звезды">
+              </a>
+              <p class="rating">Рейтинг 8,9</p>
+            </section>
           </li>
           <li class="catalog-item">
-            <a href="catalog-item.html"><h3 class="hotel-title">Villas at poco diablo</h3></a>
-            <span class="hotel-type">Апартаменты</span>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/hotel2.jpg" width="135" height="90" alt="отель">
-              </a>
-            </p>
-            <p class="catalog-item-price">
+            <section class="hotel-photo">  
+              <p class="catalog-item-image">
+                <a href="catalog-item.html">
+                  <img src="img/hotel2.jpg" width="135" height="90" alt="фото отеля">
+                </a>
+              </p> 
+            </section> 
+           <section class="hotel-info">
+             <a href="catalog-item.html"><h3 class="hotel-title">Villas at poco diablo</h3></a>
+             <span class="hotel-type">Апартаменты</span>
+             <p class="catalog-item-price">
               <b>от 2000 р.</b>
-              <a class="button-booking" href="#">Забронировать</a>
-              <a  class="button-info" href="#">Подробнее</a>
-            </p>
-            <p class="rating">Рейтинг 9,2</p>
-            <a class="stars">
-              <img src="img/star.svg" width="18" height="17" alt="отель две звезды">
-            </a>      
+             </p>   
+             <a class="button-booking" href="#">Забронировать</a>
+             <a  class="button-info" href="#">Подробнее</a>
+           </section>
+           <section class="hotel-rating">
+             <a class="stars">
+               <img src="img/star.svg" width="18" height="17" alt="отель две звезды">
+             </a>
+             <p class="rating">Рейтинг 9,2</p>
+           </section>
           </li>
         </ul>
       </section>

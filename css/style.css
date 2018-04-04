@@ -446,9 +446,7 @@ a {
 }
 
 .found{
-  line-height: 26px;
-  font-size: 21px;
-  font-weight: bold;  
+   
 }
 
 .sort{
@@ -668,7 +666,7 @@ body {
   padding-left: 60px;
   /* Временно для сетки */
 
-  background-color: green;
+  background-color: aquamarine;
 }
 
 .footer-social {
@@ -755,66 +753,69 @@ body {
 
 
 .typefilter{
+   border-bottom: 1px solid #e5e5e5;
    padding: 0;
    margin: 0 70px;
+   margin-top: 5px;
    width: 1060px;
   /* Временно для сетки */
-  background-color:#ffffff;
- 
-    
- 
-    
+  background-color:#ffffff; 
+  
+
 }
 
 .container-typefilter{
    margin: 0;
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
- 
-
-   background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-    
-}
-
-.typefilter-found{
-    text-align: left;
-   
-    padding-top:0px;
-    
-
+  flex-wrap: wrap; 
 }
 
 .sort{
     text-align: left;
-    margin-left:50px;
-    background-color: green;
+    width:50px;
+    margin-left:10px;
 }
 
 .sort-button{
     text-align: left;
     padding-top:0px;
-    margin-left:40px;
+    margin-left:10px;
 }
 
 .typefilter-found{
-  margin: 0;
+  text-align: left;
+ 
+  width: 130px; 
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold; 
+  
   padding: 0;
-  width: 140px; 
-  
-  
+  padding-left:10px;
+  margin:auto 0;
+  margin-bottom: 9px;
 }
 
 .typefilter-sort{
-  width:396px;
-  margin: 0;
-  margin-left:30px; 
+  width:375px;
+  margin:auto 0;
+  margin-left:10px; 
 }
 
 .typefilter-view{
-    width:240px;
-    margin-left: 280px;
+    width:40px;
+    margin:auto 0;
+    
+    margin-left: auto;
+   
+}
+
+.sort-button{
+    width:80px;
+    margin:0;
+    padding-left:40px;
+    
 }
 
 .filter-input-checkbox + label::before {
@@ -825,14 +826,10 @@ body {
 
   width: 23px;
   height: 23px;
-
- 
     
   background-image: url("..//img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-    
-    
+  background-position: 0 0;  
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -852,17 +849,75 @@ body {
 }
 
 .catalog-list {
-  display: flex;
-  flex-direction: column;
-  
   padding: 0;
   margin: 0;
   list-style: none;
+
 }
 
+.catalog-item-image{
+    padding:0;
+    margin:0;
+    
+}
+
+
 .catalog-item {
+
   width: 1056px;
+  margin-left:73px;
   display: flex;
+  justify-content:flex-start;
+  border-bottom: 1px solid #e5e5e5;
+}
   /* Временно для сетки */
   min-height: 152px;
 }
+
+.hotel-title {
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-photo {
+  width: 165px;
+  padding: 0;
+  margin: 0;
+  padding-top:30px;
+ 
+}
+
+.hotel-info {
+  width: 260px;
+ 
+
+  /* Временно для сетки */
+  min-height: 152px;
+}
+
+.hotel-rating{
+  margin-left:auto;
+}
+
+.hotel-type{
+    width:110px;
+}
+
+.catalog-item-price{
+   width: 142px;   
+}
+
+
+.button-booking {
+   padding: 0;
+  margin: 0;
+    display:inline-block;
+    width: 110px;
+}
+.button-info {
+  padding: 0;
+  margin: 0;
+  display:inline-block;
+  width: 142px;
+}
+
