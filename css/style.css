@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -354,13 +354,18 @@ a {
   list-style: none;
 }
 
-.catalog-item a {
-  color: #000000;
+.hotel-buttons {
+  color: #ffffff;
 }
+
+
 
 .catalog-item h3 {
   font-size: 21px;
   line-height: 26px;
+  margin:0;
+  color: #000000; 
+  
 }
 
 .catalog-item h3:hover {
@@ -381,6 +386,7 @@ a {
 }
 
 .sort-button{
+  font-size: 12px;
   color:#dbdbdb;
   background-color:transparent;  
   text-decoration: none; /* Убираем подчеркивание */
@@ -647,43 +653,34 @@ body {
   padding: 0;
   width: 1200px;
   margin:0 40px;
-  
-  min-height: 120px;  
 }
 
 
 .container{
   width: 1056px;
   margin: 0 70px; 
-  padding: 0 0;
+  padding: 0;
 }
 
 
 .footer-hashtag {
   width: 240px;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 45px;
   padding-left: 60px;
-  /* Временно для сетки */
-
-  background-color: aquamarine;
+  display:inline-block;
 }
 
 .footer-social {
   width: 400px;
   padding-top: 35px;
-  /* Временно для сетки */
-  
-  background-color: greenyellow;
 }
 
 .footer-copyright {
   width: 240px;
   margin: 0;
   padding-top: 40px;
-  /* Временно для сетки */
- 
-  background-color: aquamarine;
+
 }
 
 .main-footer .container {
@@ -747,10 +744,8 @@ body {
 .filter ul{
   padding: 0;
   margin: 0;
-  
   list-style: none;   
 }
-
 
 .typefilter{
    border-bottom: 1px solid #e5e5e5;
@@ -758,10 +753,8 @@ body {
    margin: 0 70px;
    margin-top: 5px;
    width: 1060px;
-  /* Временно для сетки */
-  background-color:#ffffff; 
   
-
+  background-color:#ffffff; 
 }
 
 .container-typefilter{
@@ -773,32 +766,25 @@ body {
 
 .sort{
     text-align: left;
-    width:50px;
-    margin-left:10px;
-}
-
-.sort-button{
-    text-align: left;
-    padding-top:0px;
-    margin-left:10px;
+    margin-left:15px;
+    margin-right:36px;
+    display:inline-block; 
 }
 
 .typefilter-found{
   text-align: left;
  
-  width: 130px; 
+  width: 140px; 
   line-height: 26px;
   font-size: 21px;
   font-weight: bold; 
-  
   padding: 0;
-  padding-left:10px;
   margin:auto 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .typefilter-sort{
-  width:375px;
+  width:440px;
   margin:auto 0;
   margin-left:10px; 
 }
@@ -806,24 +792,22 @@ body {
 .typefilter-view{
     width:40px;
     margin:auto 0;
-    
     margin-left: auto;
-   
 }
 
 .sort-button{
-    width:80px;
-    margin:0;
-    padding-left:40px;
-    
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
 }
+
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -42px;
   top: -2px;
-
   width: 23px;
   height: 23px;
     
@@ -834,15 +818,12 @@ body {
 
 .filter-input-checkbox:checked + label::after {
   content: "";
-
   position: absolute;
   left: -42px;
   top: -2px;
-
   width: 26px;
   height: 26px;
   
-
   background-image: url("..//img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -852,72 +833,83 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .catalog-item-image{
     padding:0;
-    margin:0;
-    
+    margin:0; 
 }
 
 
 .catalog-item {
-
   width: 1056px;
-  margin-left:73px;
+  margin-left: 73px;
   display: flex;
   justify-content:flex-start;
   border-bottom: 1px solid #e5e5e5;
 }
-  /* Временно для сетки */
-  min-height: 152px;
-}
 
-.hotel-title {
-  padding: 0;
-  margin: 0;
-}
+
 
 .hotel-photo {
+  display: inline-block;
   width: 165px;
   padding: 0;
   margin: 0;
-  padding-top:30px;
+
+  margin-top:30px;
+  margin-bottom:25px;
  
 }
 
 .hotel-info {
   width: 260px;
- 
-
-  /* Временно для сетки */
-  min-height: 152px;
+  margin-top:23px; 
 }
 
-.hotel-rating{
+.hotel-rating {
+  width:110px;
+  text-align: right;
   margin-left:auto;
+  margin-top:30px;
+}
+
+.hotel-title {
+  margin-bottom: 15px;
+}
+
+.hotel-buttons{
+    margin-top: 13px;  
 }
 
 .hotel-type{
-    width:110px;
+   text-align: left;
+   line-height: 21px;
+   display:inline-block;
+   width: 110px;
+    margin-top: 10px;  
 }
 
 .catalog-item-price{
-   width: 142px;   
+   text-align: right;
 }
 
 
 .button-booking {
-   padding: 0;
+  padding: 0;
   margin: 0;
-    display:inline-block;
-    width: 110px;
+  display: inline-block;
+  width: 142px;
+  text-align: center;  
+  line-height: 27px; 
 }
+
 .button-info {
   padding: 0;
   margin: 0;
-  display:inline-block;
-  width: 142px;
+  display: inline-block;
+  width: 110px;
+  line-height: 27px;
+  text-align: center;  
 }
 
